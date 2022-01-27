@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Electronic Messaging</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  </head>
+  <body>
+    <main>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="check" viewBox="0 0 16 16">
+          <title>Check</title>
+          <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+          />
+        </symbol>
+      </svg>
+
+      <div class="container py-3">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="images/GEM_logo_blue_outline.png" alt="logo" class="logo" />
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+              <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
+            </nav>
+          </div>
+
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-5 fw-normal">Our offers</h1>
+            <p class="fs-5 text-muted">
+              Select one of our predefined GEM packages or let the GEM team know your specific needs.<br/>
+              The GEM team will make a custom plan that meets all your requirements.
+            </p>
+          </div>
+        </header>
+
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">GEM Basic</h4>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="w-100 btn btn-lg btn-primary-soft">Get started</button>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Unlimited trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          5 Tenants - unlimited users
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Tenant</strong><br />
+                          is an organization (or group of users) that logs into the software platform. The organization
+                          that enters into the contract with NLeyes is the first tenant. Each subsequent organization
+                          that gains access within your contract is a new tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          0 - 2500 Functional messages
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Overspend</strong><br />
+                          All messages exceeding the limit of 2500 messages will be charged seperately at a rate of
+                          €0,35.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          100 Trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Guaranteed uptime 99,8%
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin adds the appropriate classes that we use to
+                          style each element. These classes control the overall appearance, as well as the showing and
+                          hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                          default variables. It's also worth noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h1 class="card-title pricing-card-title">€495<small class="text-muted fw-light">/mo</small></h1>
+                  <button type="button" class="w-100 btn btn-lg btn-primary-soft">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header bg-primary py-3">
+                  <h4 class="my-0 fw-normal">GEM Advanced</h4>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Unlimited trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          5 Tenants - unlimited users
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Tenant</strong><br />
+                          is an organization (or group of users) that logs into the software platform. The organization
+                          that enters into the contract with NLeyes is the first tenant. Each subsequent organization
+                          that gains access within your contract is a new tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          0 - 2500 Functional messages
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Overspend</strong><br />
+                          All messages exceeding the limit of 2500 messages will be charged seperately at a rate of
+                          €0,35.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          100 Trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Guaranteed uptime 99,8%
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin adds the appropriate classes that we use to
+                          style each element. These classes control the overall appearance, as well as the showing and
+                          hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                          default variables. It's also worth noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h1 class="card-title pricing-card-title">€995<small class="text-muted fw-light">/mo</small></h1>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">GEM Professional</h4>
+                </div>
+                <div class="card-body">
+                  <button type="button" class="w-100 btn btn-lg btn-primary-soft">Get started</button>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Unlimited trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          5 Tenants - unlimited users
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Tenant</strong><br />
+                          is an organization (or group of users) that logs into the software platform. The organization
+                          that enters into the contract with NLeyes is the first tenant. Each subsequent organization
+                          that gains access within your contract is a new tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          0 - 2500 Functional messages
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>Overspend</strong><br />
+                          All messages exceeding the limit of 2500 messages will be charged seperately at a rate of
+                          €0,35.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          100 Trading partners
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A customer, supplier, or other partner with whom you exchange messages. <br />
+                          <strong>Note:</strong> A trading partner can also become a tenant.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Guaranteed uptime 99,8%
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin adds the appropriate classes that we use to
+                          style each element. These classes control the overall appearance, as well as the showing and
+                          hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                          default variables. It's also worth noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h1 class="card-title pricing-card-title">€1495<small class="text-muted fw-light">/mo</small></h1>
+                  <button type="button" class="w-100 btn btn-lg btn-primary-soft">Get started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%"></th>
+                  <th style="width: 22%">Basic</th>
+                  <th style="width: 22%">Advanced</th>
+                  <th style="width: 22%">Professional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Test environment</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Production environment</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited inbound connections</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited outbound connections</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Technical support</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img src="images/GEM_logo_blue_outline.png" alt="logo" class="logo" />
+              <small id="copyright" class="d-block mb-3 text-muted"></small>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Random feature</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Team feature</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Another one</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Last time</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Resource</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Resource name</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Another resource</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Final resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Team</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Locations</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Privacy</a>
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#">Terms</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
