@@ -1,3 +1,3 @@
 var year = new Date().getFullYear();
 
-document.querySelector("#copyright").innerHTML = "&copy; 2017–" + year;
+document.querySelector("#copyright small").innerHTML = "&copy; 2017–" + year;
