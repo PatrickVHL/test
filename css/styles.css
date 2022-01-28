@@ -63,3 +63,19 @@ body {
     background-color: #629daa;
     border-color: #629daa;
 }
+
+thead th:first-child {
+    text-align: left;
+}
+
+.table-footer {
+    font-size: 14px;
+}
+
+.table-footer ol {
+    margin-left: -10px;
+}
+
+#copyright {
+    text-align: center;
+}
